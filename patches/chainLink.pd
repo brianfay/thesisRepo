@@ -1,4 +1,4 @@
-#N canvas 0 0 1600 814 10;
+#N canvas 0 0 1586 814 10;
 #X obj 42 52 inlet~;
 #X obj 40 335 outlet~;
 #N canvas 0 0 335 506 activateLogic 0;
@@ -44,7 +44,7 @@
 #X obj 1090 137 gate;
 #X floatatom 1152 117 5 0 0 0 - - -;
 #X obj 1083 118 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1116 99 min 16;
 #X obj 41 202 bypass;
 #X obj 1338 142 r \$0-allOff;
@@ -56,7 +56,7 @@
 #X obj 1090 168 t f f;
 #X obj 1009 299 s \$0-bypass;
 #X msg 1009 278 1;
-#N canvas 543 259 450 300 noteInput 1;
+#N canvas 543 259 450 300 noteInput 0;
 #X obj 36 120 route 127;
 #X obj 68 43 t b f;
 #X obj 36 93 pack f f;
@@ -97,7 +97,7 @@
 #X obj 126 230 throw~ topUpperChainLooperIn;
 #X obj 126 253 r~ topUpperChainLooperOut;
 #X obj 890 167 gate;
-#X obj 883 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 883 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 911 138 r buttonlistener;
 #X obj 852 211 r \$0-looper;
@@ -120,6 +120,7 @@
 #X connect 2 0 3 0;
 #X connect 2 0 6 0;
 #X connect 2 0 45 0;
+#X connect 2 0 52 2;
 #X connect 4 0 15 0;
 #X connect 5 0 4 1;
 #X connect 6 0 4 0;
