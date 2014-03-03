@@ -1,0 +1,5 @@
+sudo gpio mode 0 up
+sudo /home/ccrma/vanillaPdCompiled/pd-0.45-4/bin/pd -nogui -rt -r 44100 -audiobuf 10 -blocksize 64 -audiodev 1 -channels 2 -alsa /home/ccrma/ChainLinkFX/mainDevelopment.pd
+exit 0
+
+
