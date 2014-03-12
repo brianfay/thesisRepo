@@ -1,4 +1,4 @@
-#N canvas 1 168 919 652 10;
+#N canvas 563 194 919 652 10;
 #X obj 55 -40 inlet~;
 #X obj 243 143 outlet~;
 #X obj 490 -141 inlet onOff;
@@ -12,7 +12,7 @@
 #X obj 400 33 del 10;
 #X obj 460 33 del 10;
 #X text 175 -105 delay time;
-#X obj 210 55 *~ 0.5;
+#X obj 19 61 *~ 0.5;
 #X obj 334 -52 min 0.7;
 #X obj 334 -33 max 0;
 #X obj 334 -93 / 127;
@@ -47,7 +47,7 @@
 #X obj 565 151 spigot;
 #X obj 18 93 delwrite~ \$0-delay 1000;
 #X connect 0 0 8 0;
-#X connect 0 0 45 0;
+#X connect 0 0 13 0;
 #X connect 2 0 3 0;
 #X connect 2 0 22 0;
 #X connect 2 0 40 1;
