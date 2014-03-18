@@ -1,4 +1,4 @@
-#N canvas 801 61 799 814 10;
+#N canvas 799 61 799 813 10;
 #X obj 35 -40 inlet~;
 #X obj 223 143 outlet~;
 #X obj 470 -141 inlet onOff;
@@ -73,7 +73,6 @@
 #X obj 1304 -14 sel 1;
 #X obj 1304 39 f;
 #X obj 1303 -40 spigot;
-#X obj 1304 69 ctlout 3 4;
 #X msg 1343 16 0;
 #X obj 1354 -16 loadbang;
 #X obj 97 -108 phasor~;
@@ -81,6 +80,7 @@
 #X obj 99 -66 abs~;
 #X obj 98 -44 *~ 4;
 #X obj 98 -22 -~ 1;
+#X obj 1304 69 ctlout 4 3;
 #X connect 0 0 8 0;
 #X connect 0 0 62 0;
 #X connect 2 0 3 0;
@@ -158,17 +158,17 @@
 #X connect 60 0 59 0;
 #X connect 61 0 66 0;
 #X connect 62 0 66 0;
-#X connect 63 0 74 0;
+#X connect 63 0 73 0;
 #X connect 64 0 26 0;
 #X connect 65 0 27 1;
 #X connect 67 0 52 0;
 #X connect 68 0 69 0;
-#X connect 69 0 71 0;
+#X connect 69 0 78 0;
 #X connect 70 0 68 0;
-#X connect 72 0 69 1;
-#X connect 73 0 72 0;
+#X connect 71 0 69 1;
+#X connect 72 0 71 0;
+#X connect 73 0 74 0;
 #X connect 74 0 75 0;
 #X connect 75 0 76 0;
 #X connect 76 0 77 0;
-#X connect 77 0 78 0;
-#X connect 78 0 27 0;
+#X connect 77 0 27 0;
