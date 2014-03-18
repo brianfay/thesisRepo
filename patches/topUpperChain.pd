@@ -1,4 +1,4 @@
-#N canvas 0 61 1600 814 10;
+#N canvas 1 61 1585 813 10;
 #X obj 155 -84 inlet~;
 #X text 204 -89 each chain has 8 "links \, " each link can have 1 effect
 registered to it.;
@@ -107,7 +107,8 @@ hog;
 #X obj 476 891 line;
 #X msg 476 860 \$1 10;
 #X obj 586 832 ctlout 5 3;
-#X obj 586 774 loadbang 127;
+#X msg 586 771 127;
+#X obj 586 750 loadbang;
 #X connect 0 0 6 0;
 #X connect 4 0 9 0;
 #X connect 5 0 13 0;
@@ -170,3 +171,5 @@ hog;
 #X connect 64 0 59 1;
 #X connect 65 0 64 0;
 #X connect 67 0 66 0;
+#X connect 67 0 60 0;
+#X connect 68 0 67 0;
