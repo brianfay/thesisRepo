@@ -2,8 +2,8 @@
 #X obj 155 -84 inlet~;
 #X text 204 -89 each chain has 8 "links \, " each link can have 1 effect
 registered to it.;
-#X obj 165 920 throw~ master;
-#X text 11 938 should throw some volume + solo/mute controls here use
+#X obj 166 944 throw~ master;
+#X text 11 978 should throw some volume + solo/mute controls here use
 horizontal sliders;
 #N canvas 154 118 450 300 loopLinkNumber 0;
 #X obj 41 -72 f 0;
@@ -99,16 +99,15 @@ hog;
 #X obj 223 840 s \$0-loopLinkNumber;
 #X obj 189 742 throw~ \$0-loopInput;
 #X obj 223 720 s \$0-loopLinkNumber;
-#X obj 166 892 *~ 1;
+#X obj 166 919 *~ 1;
 #X obj 476 773 / 127;
 #X obj 476 749 ctlin 1;
-#X obj 476 818 dbtorms;
-#X obj 476 795 * 100;
 #X obj 476 891 line;
 #X msg 476 860 \$1 10;
-#X obj 586 832 ctlout 5 3;
 #X msg 586 771 127;
 #X obj 586 750 loadbang;
+#X obj 586 832 ctlout 10 3;
+#X obj 476 795 * 1;
 #X connect 0 0 6 0;
 #X connect 4 0 9 0;
 #X connect 5 0 13 0;
@@ -164,12 +163,11 @@ hog;
 #X connect 54 2 56 0;
 #X connect 54 3 52 0;
 #X connect 59 0 2 0;
-#X connect 60 0 63 0;
+#X connect 60 0 67 0;
 #X connect 61 0 60 0;
-#X connect 62 0 65 0;
+#X connect 62 0 59 1;
 #X connect 63 0 62 0;
-#X connect 64 0 59 1;
+#X connect 64 0 60 0;
+#X connect 64 0 66 0;
 #X connect 65 0 64 0;
-#X connect 67 0 66 0;
-#X connect 67 0 60 0;
-#X connect 68 0 67 0;
+#X connect 67 0 63 0;
