@@ -158,7 +158,7 @@
 #X msg 1312 326 5;
 #X msg 1619 176 0;
 #X obj 1619 200 s \$0-granular;
-#X obj 728 363 granular2;
+#X obj 728 363 granular;
 #X connect 0 0 6 0;
 #X connect 0 0 41 0;
 #X connect 0 0 53 0;

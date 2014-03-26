@@ -1,4 +1,4 @@
-#N canvas 0 61 1600 814 10;
+#N canvas 1 61 1585 813 10;
 #X obj 55 -40 inlet~;
 #X obj 243 143 outlet~;
 #X obj 490 -141 inlet onOff;
@@ -12,7 +12,7 @@
 #X obj 400 33 del 10;
 #X obj 460 33 del 10;
 #X text 175 -105 delay time;
-#X obj 19 61 *~ 0.5;
+#X obj 19 91 *~ 0.5;
 #X obj 334 -52 min 0.7;
 #X obj 334 -33 max 0;
 #X obj 334 -93 / 127;
@@ -34,7 +34,7 @@
 #X obj 595 94 r buttonlistener;
 #X obj 193 -67 r \$0-delaytime;
 #X obj 193 -46 min 800;
-#X obj 193 -20 max 10;
+#X obj 193 -21 max 10;
 #X obj 563 243 s \$0-delaytime;
 #X obj 563 197 sel 1 0;
 #X obj 208 8 delread~ \$0-delay 200;
@@ -45,7 +45,7 @@
 #X obj 763 -40 spigot;
 #X obj 567 -9 spigot;
 #X obj 565 151 spigot;
-#X obj 18 93 delwrite~ \$0-delay 1000;
+#X obj 18 123 delwrite~ \$0-delay 1000;
 #X obj 934 -14 sel 1;
 #X obj 934 39 f;
 #X obj 933 -40 spigot;
@@ -64,6 +64,8 @@
 #X obj 934 69 ctlout 2 3;
 #X obj 1064 69 ctlout 3 3;
 #X obj 1184 69 ctlout 4 3;
+#X obj 84 55 line;
+#X msg 84 32 \$1 10;
 #X connect 0 0 8 0;
 #X connect 0 0 13 0;
 #X connect 2 0 3 0;
@@ -91,7 +93,7 @@
 #X connect 11 0 5 0;
 #X connect 13 0 45 0;
 #X connect 14 0 15 0;
-#X connect 15 0 13 1;
+#X connect 15 0 65 0;
 #X connect 16 0 17 0;
 #X connect 17 0 14 0;
 #X connect 19 0 16 0;
@@ -138,3 +140,5 @@
 #X connect 58 0 56 0;
 #X connect 59 0 57 1;
 #X connect 60 0 59 0;
+#X connect 64 0 13 1;
+#X connect 65 0 64 0;
