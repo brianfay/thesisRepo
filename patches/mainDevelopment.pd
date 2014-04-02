@@ -1,4 +1,4 @@
-#N canvas 755 301 610 345 10;
+#N canvas 751 317 610 345 10;
 #X obj 202 314 dac~;
 #X obj 194 13 buttonlistener;
 #X obj 379 -1 loadbang;
@@ -61,14 +61,14 @@
 #X connect 22 0 0 0;
 #X connect 23 0 3 0;
 #X restore 396 122 pd ledControls;
-#X obj 185 202 topUpperChain;
-#X obj 185 228 topLowerChain;
 #X obj 255 161 adc~;
+#X obj 185 198 topUpperChain;
+#X obj 185 222 bottomUpperChain;
 #X connect 1 0 6 0;
 #X connect 2 0 7 0;
 #X connect 4 0 5 0;
 #X connect 5 0 0 0;
 #X connect 5 0 0 1;
 #X connect 7 0 3 0;
-#X connect 11 0 9 0;
-#X connect 11 0 10 0;
+#X connect 9 0 10 0;
+#X connect 9 0 11 0;
